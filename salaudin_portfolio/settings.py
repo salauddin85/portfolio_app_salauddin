@@ -10,8 +10,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Security settings
 SECRET_KEY = 'django-insecure-0!iedrfr^og*dga^s(1%=rcqpe5g88b$*pmzm-#tgimgwje_(3' # Use a strong secret key
 DEBUG = True  # Set to False in production
-ALLOWED_HOSTS = ['*']  # Replace with your domain for production
-
+ALLOWED_HOSTS = ["127.0.0.1","localhost","https://portfolio-app-salauddin.onrender.com"]
+CSRF_TRUSTED_ORIGINS = ['https://portfolio-app-salauddin.onrender.com']
 # CORS settings (restrict to your domain in production)
 CORS_ALLOW_ALL_ORIGINS = True  # Set to False and specify origins in production
 
